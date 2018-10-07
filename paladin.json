@@ -1,0 +1,128 @@
+{
+	"monster": [
+		{
+			"source": "TEST",
+			"page": 0,
+			"name": "Paladin",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d10 + 20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 11,
+			"con": 14,
+			"int": 11,
+			"wis": 11,
+			"cha": 16,
+			"save": {
+				"str": "+6",
+				"con": "+5",
+				"cha": "+6"
+			},
+			"skill": {
+				"athletics": "+6",
+				"insight": "+3",
+				"persuasion": "+6",
+				"religion": "+5"
+			},
+			"passive": 11,
+			"languages": "Any one language (usually Common)",
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Brave",
+					"entries": [
+						"The paladin has advantage on saving throws against being frightened."
+					]
+				},
+				{
+					"name": "Divine Smite",
+					"entries": [
+						"As a bonus action, the paladin can expend a spell slot to cause its melee weapon attacks to magically deal an extra 9 ({@damage 2d8}) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If the paladin expends a spell slot of 2nd level or higher, the extra damage increases by {@dice 1d8} for each level above 1st. The damage increases by {@dice 1d8} if the target is an undead or a fiend."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The paladin can use its Turn Unholy. It then makes two melee attacks"
+					]
+				},
+				{
+					"name": "Warhammer",
+					"entries": [
+						"Melee Weapon Attack: {@hit 6} to hit, reach 5 ft., one target. Hit: 7 ({@damage 1d8    +    3}) bludgeoning damage, or 8 ({@damage 1d10    +    3}) bludgeoning damage if used with two hands."
+					]
+				},
+				{
+					"name": "Turn Unholy",
+					"entries": [
+						"Each fiend or undead that can see or hear the paladin within 30 feet of it must make a DC 13 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the paladin's Turn Unholy for the next 24 hours"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The paladin adds 2 to its AC against one melee attack that would hit it. To do so, the paladin must see the attacker and be wielding a melee weapon.",
+						"Description",
+						"Knights of their respective orders and conduits of their grand deity; paladins stand in front of the enemy of their religion without any fear or care for death. Every paladin holds a code of honor or ethics that is dear to them, to break this code is to loss everything they stand for in life.",
+						"A paladin is often chosen by other respectable members or leaders to lead a small group or a contingent of warriors on a holy quest. They are often the best chosen for such task due to them being more responsible than others."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The paladin is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 14, {@hit 6} to hit with spell attacks). The paladin has the following paladin spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell bless}*",
+								"{@spell cure wounds}",
+								"{@spell detect evil and good}",
+								"{@spell heroism}*",
+								"{@spell protection from evil and good}"
+							]
+						},
+						"2": {
+							"slots": 2,
+							"spells": [
+								"{@spell aid}",
+								"{@spell lesser restoration}",
+								"{@spell magic weapon}*",
+								"{@spell protection from poison}"
+							]
+						}
+					},
+					"footerEntries": [
+						"*The paladin casts one of these spells on itself before combat."
+					],
+					"ability": "cha"
+				}
+			]
+		}
+	]
+}
