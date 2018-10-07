@@ -1,0 +1,125 @@
+{
+	"monster": [
+		{
+			"source": "MM",
+			"page": 0,
+			"name": "Arcane Trickster",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"C",
+				"G",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 36,
+				"formula": "8d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 10,
+			"int": 16,
+			"wis": 12,
+			"cha": 14,
+			"save": {
+				"dex": "+5",
+				"int": "+5"
+			},
+			"skill": {
+				"acrobatics": "+5",
+				"perception": "+3",
+				"sleight of hand": "+5",
+				"stealth": "+5"
+			},
+			"passive": 13,
+			"languages": "any two languages (usually including Common)",
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"On each of its turns, the trickster can use a bonus action to take the Dash, Disengage, or Hide action."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the trickster is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the trickster instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"The trickster deals an extra 14 ({@dice 4d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the trickster that isn't incapacitated and the trickster doesn't have disadvantage on the attack roll."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"Melee or Ranged Weapon Attack: {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 ({@damage 1d4    +    3}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Uncanny Dodge",
+					"entries": [
+						"The trickster halves the damage that it takes from an attack that hits it. The trickster must be able to see the attacker."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The trickster is a 3rd-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 13, {@hit 5} to hit with spell attacks). It has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell minor illusion}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell charm person}",
+								"{@spell hideous laughter}",
+								"{@spell sleep}"
+							]
+						},
+						"2": {
+							"slots": 2,
+							"spells": [
+								"{@spell invisibility}",
+								"{@spell scorching ray}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			]
+		}
+	]
+}
