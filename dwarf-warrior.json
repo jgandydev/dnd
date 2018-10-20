@@ -1,0 +1,102 @@
+{
+	"monster": [
+		{
+			"source": "TEST",
+			"page": 0,
+			"name": "Dwarf Warrior",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dwarf"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 30,
+				"formula": "4d8 + 8"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 14,
+			"dex": 11,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"resist": [
+				"poison"
+			],
+			"passive": 10,
+			"senses": "darkvision 60 ft.",
+			"languages": "Common, Dwarvish",
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Dwarven Resilience",
+					"entries": [
+						"The dwarf has advantage on saving throws against poison."
+					]
+				},
+				{
+					"name": "Stonecunning",
+					"entries": [
+						"Whenever the dwarf makes an Intelligence (History) check related to the origin of stonework, it is considered proficient in the History skill and add double its proficiency bonus to the check, instead of its normal proficiency bonus."
+					]
+				},
+				{
+					"name": "Wall Barrier",
+					"entries": [
+						"With every ally that is 5 feet away from the dwarf that has a shield, the dwarf gains a +1 to its AC (to a maximum of a +3 bonus). The dwarf must be wielding a shield to gain this benefit."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dwarf makes two melee attacks, only one of which can be with its shield bash."
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"Melee Weapon Attack: {@hit 4} to hit, reach 5 ft., one target. Hit: 6 ({@damage 1d8    +    2}) slashing damage, or 7 ({@damage 1d10    +    2}) slashing damage if used with two hands to make a melee attack."
+					]
+				},
+				{
+					"name": "Shield Bash",
+					"entries": [
+						"Melee Weapon Attack: {@hit 4} to hit, reach 5 ft., one target. Hit: 4 ({@damage 1d4    +    2}) bludgeoning damage. If the target Large or smaller, it must succeed on a DC 12 Strength saving throw or be knocked prone."
+					]
+				},
+				{
+					"name": "Handaxe",
+					"entries": [
+						"Melee or Ranged Weapon Attack: {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 ({@damage 1d6    +    2}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The dwarf adds 2 to its AC against one melee attack that would hit it. To do so, the dwarf must see the attacker and be wielding a melee weapon."
+					]
+				}
+			]
+		}
+	]
+}
